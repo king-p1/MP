@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORKSPACE audio player</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <section>
+      <div class="audio">
+        <div class="progress"></div>
+
+        <div class="info">
+          <div class="thumbnail">
+            <img src="./dj.gif" alt="" srcset="" />
+            <span class="play_pause">
+              <i class="bx bx-play"></i>
+            </span>
+          </div>
+           
+          <div class="volume">
+            <span class="volume-down"> - </span>
+            <div class="volume-progress">
+              <div class="volume-bar"></div>
+            </div>
+            <span class="volume-up"> + </span>
+          </div>
+
+          <div class="action">
+            <div class="song">
+              <div class="name">SEE YOU AGAIN</div>
+              <div class="singer">TYLER</div>
+            </div>
+
+            <div class="time">
+              <span class="current">0:00</span>
+              /
+              <span class="duration">0:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="arrow">
+      <span class="back-arrow">
+<i class='bx bx-chevron-left' ></i>
+      </span>
+
+       <span class="next-arrow">
+        <i class='bx bx-chevron-right'></i>
+       </span>
+
+     </div>
+    <audio
+      hidden
+      src="./SEE YOU AGAIN featuring Kali Uchis.mp3"
+    ></audio>
+
+    <script src="./payer.js"></script>
+  </body>
+</html>
